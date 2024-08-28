@@ -51,6 +51,7 @@ function CustomMail({ threadId, onClose }) {
       console.log("Reply sent successfully");
       onClose();
     } catch (error) {
+      onClose();
       console.error("Error sending reply:", error);
     }
   };
